@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="5" failures="4" errors="0" skipped="0" time="11.428" timestamp="2026-06-20T05:45:39" hostname="localhost">
+  <testsuite name="com.example.testeableapp.RestaurantOrderTest" tests="5" failures="4" errors="0" skipped="0" time="9.32" timestamp="2026-06-20T05:45:39" hostname="localhost">
+    <properties>
+      <property name="device" value="SM-A256E - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="todosLosItemsDelMenu_sonVisibles" classname="com.example.testeableapp.RestaurantOrderTest" time="2.573" />
+    <testcase name="alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido" classname="com.example.testeableapp.RestaurantOrderTest" time="1.885">
+      <failure>java.lang.AssertionError: Assert failed: The component with TestTag = 'emptyOrderMessage' is not displayed!
+at androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)
+at com.example.testeableapp.RestaurantOrderTest.alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido(RestaurantOrderTest.kt:149)
+</failure>
+    </testcase>
+    <testcase name="mensajeDePedidoVacio_esVisibleAlInicio" classname="com.example.testeableapp.RestaurantOrderTest" time="1.164">
+      <failure>java.lang.AssertionError: Assert failed: The component with TestTag = 'emptyOrderMessage' is not displayed!
+at androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)
+at com.example.testeableapp.RestaurantOrderTest.mensajeDePedidoVacio_esVisibleAlInicio(RestaurantOrderTest.kt:79)
+</failure>
+    </testcase>
+    <testcase name="totalGeneral_seActualizaAlAgregarProductos" classname="com.example.testeableapp.RestaurantOrderTest" time="1.574">
+      <failure>java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [14.00 €])
+Semantics of the node:
+Node #454 at (l=858.0, t=3038.0, r=990.0, b=3106.0)px, Tag: 'totalValue'
+Text = '[8.50 €]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 1 sibling
+Selector used: (TestTag = 'totalValue')
+
+at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)
+at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)
+at com.example.testeableapp.RestaurantOrderTest.totalGeneral_seActualizaAlAgregarProductos(RestaurantOrderTest.kt:127)
+</failure>
+    </testcase>
+    <testcase name="flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia" classname="com.example.testeableapp.RestaurantOrderTest" time="2.124">
+      <failure>java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [¡Pedido de 2 artículos por un total de 6.00 € recibido! Preparen los fogones.])
+Semantics of the node:
+Node #612 at (l=68.0, t=203.0, r=832.0, b=317.0)px, Tag: 'confirmationMessage'
+Text = '[¡Pedido de 1 artículos por un total de 3.00 € recibido! Preparen los fogones.]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 2 siblings
+Selector used: (TestTag = 'confirmationMessage')
+
+at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)
+at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)
+at com.example.testeableapp.RestaurantOrderTest.flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia(RestaurantOrderTest.kt:190)
+</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

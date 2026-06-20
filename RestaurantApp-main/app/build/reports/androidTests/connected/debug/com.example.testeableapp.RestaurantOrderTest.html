@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class com.example.testeableapp.RestaurantOrderTest</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.testeableapp.RestaurantOrderTest</h1>
+<div class="breadcrumbs">
+<a href="index.html">all</a> &gt; 
+<a href="com.example.testeableapp.html">com.example.testeableapp</a> &gt; RestaurantOrderTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">4</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="skipped">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.320s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">20%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido"></a>
+<h3 class="failures">alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Assert failed: The component with TestTag = 'emptyOrderMessage' is not displayed!
+at androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)
+at com.example.testeableapp.RestaurantOrderTest.alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido(RestaurantOrderTest.kt:149)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia"></a>
+<h3 class="failures">flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [¡Pedido de 2 artículos por un total de 6.00 € recibido! Preparen los fogones.])
+Semantics of the node:
+Node #612 at (l=68.0, t=203.0, r=832.0, b=317.0)px, Tag: 'confirmationMessage'
+Text = '[¡Pedido de 1 artículos por un total de 3.00 € recibido! Preparen los fogones.]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 2 siblings
+Selector used: (TestTag = 'confirmationMessage')
+
+at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)
+at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)
+at com.example.testeableapp.RestaurantOrderTest.flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia(RestaurantOrderTest.kt:190)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="mensajeDePedidoVacio_esVisibleAlInicio"></a>
+<h3 class="failures">mensajeDePedidoVacio_esVisibleAlInicio</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Assert failed: The component with TestTag = 'emptyOrderMessage' is not displayed!
+at androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)
+at com.example.testeableapp.RestaurantOrderTest.mensajeDePedidoVacio_esVisibleAlInicio(RestaurantOrderTest.kt:79)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="totalGeneral_seActualizaAlAgregarProductos"></a>
+<h3 class="failures">totalGeneral_seActualizaAlAgregarProductos</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [14.00 €])
+Semantics of the node:
+Node #454 at (l=858.0, t=3038.0, r=990.0, b=3106.0)px, Tag: 'totalValue'
+Text = '[8.50 €]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 1 sibling
+Selector used: (TestTag = 'totalValue')
+
+at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)
+at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)
+at androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)
+at com.example.testeableapp.RestaurantOrderTest.totalGeneral_seActualizaAlAgregarProductos(RestaurantOrderTest.kt:127)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>SM-A256E - 16</th>
+</tr>
+</thead>
+<tr>
+<td>alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido</td>
+<td class="failures">failed (1.885s)</td>
+</tr>
+<tr>
+<td>flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia</td>
+<td class="failures">failed (2.124s)</td>
+</tr>
+<tr>
+<td>mensajeDePedidoVacio_esVisibleAlInicio</td>
+<td class="failures">failed (1.164s)</td>
+</tr>
+<tr>
+<td>todosLosItemsDelMenu_sonVisibles</td>
+<td class="success">passed (2.573s)</td>
+</tr>
+<tr>
+<td>totalGeneral_seActualizaAlAgregarProductos</td>
+<td class="failures">failed (1.574s)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 9.3.1</a> at 19 jun 2026 23:45:39</p>
+</div>
+</div>
+</body>

@@ -1,0 +1,321 @@
+# proto-message: google.testing.platform.proto.api.core.TestSuiteResult
+# 2026-06-20T05:45:39.206329Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 5
+  device {
+    id: "adb-R5CXC0YGR0J-GQr838._adb-tls-connect._tcp"
+    friendly_name: "primary"
+  }
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "RestaurantOrderTest"
+    test_package: "com.example.testeableapp"
+    test_method: "todosLosItemsDelMenu_sonVisibles"
+    start_time {
+      seconds: 1781934327
+      nanos: 748000000
+    }
+    end_time {
+      seconds: 1781934330
+      nanos: 332000000
+    }
+    device {
+      id: "adb-R5CXC0YGR0J-GQr838._adb-tls-connect._tcp"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\logcat-com.example.testeableapp.RestaurantOrderTest-todosLosItemsDelMenu_sonVisibles.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RestaurantOrderTest"
+    test_package: "com.example.testeableapp"
+    test_method: "alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido"
+    start_time {
+      seconds: 1781934330
+      nanos: 349000000
+    }
+    end_time {
+      seconds: 1781934332
+      nanos: 233000000
+    }
+    device {
+      id: "adb-R5CXC0YGR0J-GQr838._adb-tls-connect._tcp"
+      friendly_name: "primary"
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.AssertionError: Assert failed: The component with TestTag = \'emptyOrderMessage\' is not displayed!\nat androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)\nat com.example.testeableapp.RestaurantOrderTest.alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido(RestaurantOrderTest.kt:149)\n"
+    error_type: "java.lang.AssertionError"
+    stack_trace: "java.lang.AssertionError: Assert failed: The component with TestTag = \'emptyOrderMessage\' is not displayed!\nat androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)\nat com.example.testeableapp.RestaurantOrderTest.alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido(RestaurantOrderTest.kt:149)\n"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\logcat-com.example.testeableapp.RestaurantOrderTest-alAgregarProducto_elMensajeVacioDesapareceYApareceElBotonDePedido.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RestaurantOrderTest"
+    test_package: "com.example.testeableapp"
+    test_method: "mensajeDePedidoVacio_esVisibleAlInicio"
+    start_time {
+      seconds: 1781934332
+      nanos: 237000000
+    }
+    end_time {
+      seconds: 1781934333
+      nanos: 402000000
+    }
+    device {
+      id: "adb-R5CXC0YGR0J-GQr838._adb-tls-connect._tcp"
+      friendly_name: "primary"
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.AssertionError: Assert failed: The component with TestTag = \'emptyOrderMessage\' is not displayed!\nat androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)\nat com.example.testeableapp.RestaurantOrderTest.mensajeDePedidoVacio_esVisibleAlInicio(RestaurantOrderTest.kt:79)\n"
+    error_type: "java.lang.AssertionError"
+    stack_trace: "java.lang.AssertionError: Assert failed: The component with TestTag = \'emptyOrderMessage\' is not displayed!\nat androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:34)\nat com.example.testeableapp.RestaurantOrderTest.mensajeDePedidoVacio_esVisibleAlInicio(RestaurantOrderTest.kt:79)\n"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\logcat-com.example.testeableapp.RestaurantOrderTest-mensajeDePedidoVacio_esVisibleAlInicio.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RestaurantOrderTest"
+    test_package: "com.example.testeableapp"
+    test_method: "totalGeneral_seActualizaAlAgregarProductos"
+    start_time {
+      seconds: 1781934333
+      nanos: 404000000
+    }
+    end_time {
+      seconds: 1781934334
+      nanos: 978000000
+    }
+    device {
+      id: "adb-R5CXC0YGR0J-GQr838._adb-tls-connect._tcp"
+      friendly_name: "primary"
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [14.00 \342\202\254])\nSemantics of the node:\nNode #454 at (l=858.0, t=3038.0, r=990.0, b=3106.0)px, Tag: \'totalValue\'\nText = \'[8.50 \342\202\254]\'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 1 sibling\nSelector used: (TestTag = \'totalValue\')\n\nat androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)\nat androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)\nat com.example.testeableapp.RestaurantOrderTest.totalGeneral_seActualizaAlAgregarProductos(RestaurantOrderTest.kt:127)\n"
+    error_type: "java.lang.AssertionError"
+    stack_trace: "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [14.00 \342\202\254])\nSemantics of the node:\nNode #454 at (l=858.0, t=3038.0, r=990.0, b=3106.0)px, Tag: \'totalValue\'\nText = \'[8.50 \342\202\254]\'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 1 sibling\nSelector used: (TestTag = \'totalValue\')\n\nat androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)\nat androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)\nat com.example.testeableapp.RestaurantOrderTest.totalGeneral_seActualizaAlAgregarProductos(RestaurantOrderTest.kt:127)\n"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\logcat-com.example.testeableapp.RestaurantOrderTest-totalGeneral_seActualizaAlAgregarProductos.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RestaurantOrderTest"
+    test_package: "com.example.testeableapp"
+    test_method: "flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia"
+    start_time {
+      seconds: 1781934334
+      nanos: 981000000
+    }
+    end_time {
+      seconds: 1781934337
+      nanos: 105000000
+    }
+    device {
+      id: "adb-R5CXC0YGR0J-GQr838._adb-tls-connect._tcp"
+      friendly_name: "primary"
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [\302\241Pedido de 2 art\303\255culos por un total de 6.00 \342\202\254 recibido! Preparen los fogones.])\nSemantics of the node:\nNode #612 at (l=68.0, t=203.0, r=832.0, b=317.0)px, Tag: \'confirmationMessage\'\nText = \'[\302\241Pedido de 1 art\303\255culos por un total de 3.00 \342\202\254 recibido! Preparen los fogones.]\'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 2 siblings\nSelector used: (TestTag = \'confirmationMessage\')\n\nat androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)\nat androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)\nat com.example.testeableapp.RestaurantOrderTest.flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia(RestaurantOrderTest.kt:190)\n"
+    error_type: "java.lang.AssertionError"
+    stack_trace: "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [\302\241Pedido de 2 art\303\255culos por un total de 6.00 \342\202\254 recibido! Preparen los fogones.])\nSemantics of the node:\nNode #612 at (l=68.0, t=203.0, r=832.0, b=317.0)px, Tag: \'confirmationMessage\'\nText = \'[\302\241Pedido de 1 art\303\255culos por un total de 3.00 \342\202\254 recibido! Preparen los fogones.]\'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 2 siblings\nSelector used: (TestTag = \'confirmationMessage\')\n\nat androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)\nat androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals(Assertions.kt:185)\nat androidx.compose.ui.test.AssertionsKt.assertTextEquals$default(Assertions.kt:181)\nat com.example.testeableapp.RestaurantOrderTest.flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia(RestaurantOrderTest.kt:190)\n"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\logcat-com.example.testeableapp.RestaurantOrderTest-flujoCompletoDeConfirmacionDePedido_muestraDialogoYReinicia.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\hjose\\Downloads\\RestaurantApp-con-tests (2)\\RestaurantApp-main\\app\\build\\outputs\\androidTest-results\\connected\\debug\\SM-A256E - 16\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
